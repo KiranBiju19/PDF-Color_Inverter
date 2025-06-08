@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Color Inverter",
+  "version": "1.0",
+  "description": "Inverts colors in PDF files to reduce eye strain",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
