@@ -10,12 +10,15 @@
 - Supports embedded PDF viewers (Google Drive, Classroom, etc.)
 - User-friendly popup UI with toggle button
 
-## 📂 Project Structure
-├── - content.js # Injected into all web pages, handles PDF detection and color inversion
-├── - popup.html # Extension popup interface
-├── - popup.js # Logic to toggle color inversion from popup
-├── - manifest.json # Chrome Extension manifest (v3)
-├── - icon16.png # Icon for the extension
+
+📁 pdf-color-inverter
+├── content.js        # Injected into all web pages, handles PDF detection and color inversion
+├── popup.html        # Extension popup interface
+├── popup.js          # Logic to toggle color inversion from popup
+├── manifest.json     # Chrome Extension manifest (v3)
+├── icon16.png        # Icon for the extension
+
+
 
 
 ## 🧠 How It Works
