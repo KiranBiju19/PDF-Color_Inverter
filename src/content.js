@@ -4,6 +4,7 @@ function isPdfPage() {
   // Check if the page is a PDF
   return window.location.href.toLowerCase().includes('.pdf') || 
          document.querySelector('embed[type="application/pdf"]') !== null ||
+         url.includes('.txt')
          // Google Drive PDF viewer detection
          (window.location.href.includes('drive.google.com') && 
           document.querySelector('.ndfHFb-c4YZDc-cYSp0e-DARUcf')) ||
@@ -58,6 +59,7 @@ function togglePdfInvert() {
       .pdfViewer,
       .page {
         filter: invert(100%) hue-rotate(180deg) !important;
+        background-color: #000 !important;
       }
       
       /* Additional selectors for PDF.js (used by Chrome) */
